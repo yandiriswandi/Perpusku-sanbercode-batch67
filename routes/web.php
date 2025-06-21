@@ -11,10 +11,10 @@ use App\Http\Controllers\AuthController;
 
 use App\Http\Controllers\CategoryController;
 
-Route::get('/', function () {
-    return view('index');
-})->name('dashboard');
 Route::middleware(['auth'])->group(function () {
+    Route::get('/', function () {
+        return view('index');
+    })->name('dashboard');
     Route::resource('category', CategoryController::class);
     Route::resource('shelf', ShelfController::class);
     Route::resource('book', BookController::class);
