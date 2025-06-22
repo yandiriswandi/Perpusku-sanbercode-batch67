@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>PolluxUI Admin</title>
+  <title>Perpusku</title>
   <!-- base:css -->
   <link rel="stylesheet" href="{{asset('template/template/vendors/typicons/typicons.css')}}">
   <link rel="stylesheet" href="{{asset('template/template/vendors/css/vendor.bundle.base.css')}}">
@@ -15,7 +15,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="{{asset('template/template/css/vertical-layout-light/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('template/template/images/favicon.png')}}" />
+  <link rel="shortcut icon" href="{{asset('asset/image/logoP.png')}}" />
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                 </div>
                 <div class="mt-3">
                   <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn font-bold text-light"
-                    type="submit"><b>SIGNIN</b></button>
+                    type="submit"><b>SIGN IN</b></button>
                 </div>
                 {{-- <div class="my-2 d-flex justify-content-between align-items-center">
                   <div class="form-check">

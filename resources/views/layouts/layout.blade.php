@@ -10,12 +10,13 @@
   <link rel="stylesheet" href="{{asset('template/template/vendors/typicons/typicons.css')}}">
   <link rel="stylesheet" href="{{asset('template/template/vendors/css/vendor.bundle.base.css')}}">
   <link rel="stylesheet" href="{{asset('template/template/vendors/select2/select2.min.css')}}">
-  <link rel="stylesheet" href="{{asset('template/template/vendors/select2-bootstrap-theme/select2-bootstrap.min.css')}}">
+  <link rel="stylesheet"
+    href="{{asset('template/template/vendors/select2-bootstrap-theme/select2-bootstrap.min.css')}}">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="{{asset('template/template/css/vertical-layout-light/style.css')}}">
-  <link rel="shortcut icon" href="{{asset('template/template/images/favicon.png')}}" />
+  <link rel="shortcut icon" href="{{asset('asset/image/logoP.png')}}" />
 </head>
 
 <body>
@@ -71,23 +72,23 @@
   <!-- SweetAlert Session Flash -->
   @if(session('success'))
     <script>
-      Swal.fire({
-        icon: 'success',
-        title: 'Success',
-        text: '{{ session("success") }}',
-        confirmButtonColor: '#3085d6'
-      });
+    Swal.fire({
+      icon: 'success',
+      title: 'Success',
+      text: '{{ session("success") }}',
+      confirmButtonColor: '#3085d6'
+    });
     </script>
   @endif
 
   @if(session('error'))
     <script>
-      Swal.fire({
-        icon: 'error',
-        title: 'Failed',
-        text: '{{ session("error") }}',
-        confirmButtonColor: '#d33'
-      });
+    Swal.fire({
+      icon: 'error',
+      title: 'Failed',
+      text: '{{ session("error") }}',
+      confirmButtonColor: '#d33'
+    });
     </script>
   @endif
 
