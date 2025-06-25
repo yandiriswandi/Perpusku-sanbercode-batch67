@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\LoanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ShelfController;
@@ -22,6 +23,9 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('loan', LoanController::class);
     Route::resource('profile', ProfileController::class);
     Route::patch('/loan/{loan}/status', [LoanController::class, 'updateStatus'])->name('loan.updateStatus');
+    Route::post('/comments/{book_id}',[CommentsController::class,'comments'])->name('comment.store');
+    Route::put('/comments/{comment_id}',[CommentsController::class,'update'])->name('comment.update');
+
 });
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

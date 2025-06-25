@@ -24,7 +24,7 @@
 
         <div class="row"> {{-- gunakan g-4 untuk jarak antar kolom dan baris --}}
             @forelse ($book as $item)
-                <div class="col-md-4"> {{-- hanya untuk layout kolom --}}
+                <div class="col-md-3"> {{-- hanya untuk layout kolom --}}
                     <div class="card h-100"> {{-- styling di sini --}}
                         <img class="card-img-top" src="{{ asset('asset/image/book_cover/' . $item->cover_image) }}"
                             onerror="this.onerror=null;this.src='{{ asset('asset/image/no-pictures.png') }}';"
